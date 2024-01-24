@@ -1,2 +1,3 @@
 #!/usr/bin/python3
-def safe
+def raise_exception_msg(message=""):
+    raise NameError(message)
