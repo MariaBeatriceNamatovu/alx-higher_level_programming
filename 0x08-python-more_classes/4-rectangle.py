@@ -1,10 +1,12 @@
 #!/usr/bin/python3
 
 """defines a rectangle class"""
+
 class Rectangle:
+
     """represents a rectangle"""
 
-    def __init__(self, width = 0, height = 0):
+    def __init__(self, width=0, height=0):
         """initilaizes a new rectangle
         Args:
             width(int): the width of the new rectangle
@@ -40,7 +42,7 @@ class Rectangle:
         """sets the rectangle height"""
 
         if not isinstance(value, int):
-            aise TypeError("height must be an integer")
+            raise TypeError("height must be an integer")
         if value < 0:
             raise ValueError("height must be >= 0")
         self.__height = value
@@ -54,8 +56,11 @@ class Rectangle:
         if self.__width == 0 or self.__height == 0:
             return (0)
         return ((self.__width * 2) + (self.__height * 2))
+
     def __str__(self):
-        """returns printable rectangle representation and represents it with # character"""
+        """returns printable
+        rectangle representation and represents it with # character
+        """
         if self.__width == 0 or self.__height == 0:
             return ("")
 
@@ -69,5 +74,5 @@ class Rectangle:
         def __repr__(self):
             """return the string representation of the rectangle"""
             rect = "Rectangle(" + str(self.__width)
-            rect += ", "+ str(self.__height) + ")"
+            rect += ", " + str(self.__height) + ")"
             return (rect)

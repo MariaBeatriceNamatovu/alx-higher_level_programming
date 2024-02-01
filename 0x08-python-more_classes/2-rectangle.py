@@ -2,9 +2,11 @@
 """defines a rectangle class"""
 
 class Rectangle:
+
+
     """represents a rectangle"""
 
-    def __init__(self, width = 0, height = 0):
+    def __init__(self, width=0, height=0):
         """initilaizes a new rectangle
         Args:
             width(int): the width of the new rectangle
@@ -54,7 +56,3 @@ class Rectangle:
         if self.__width == 0 or self.__height == 0:
             return (0)
         return ((self.__width * 2) + (self.__height * 2))
-
-
-
-
