@@ -100,3 +100,58 @@ The parameter ``size`` must be an integer. Otherwise, a TypeError is raised.
 ::
 
 
+
+	>>> print_square("not an int")
+
+	Traceback (most recent call last):
+
+	TypeError: size must be an integer
+
+
+::
+
+
+
+	 >>> print_square(5.5)
+
+        Traceback (most recent call last):
+
+        TypeError: size must be an integer
+
+
+::
+
+
+
+	>>> print_square("not an int")
+
+        Traceback (most recent call last):
+
+        TypeError: size must be an integer
+
+
+::
+
+
+
+
+	>>> print_square(None)
+
+        Traceback (most recent call last):
+
+        TypeError: size must be an integer
+
+If ``size`` is less than zero, a ValueError is raised.
+
+
+::
+
+
+	>>> print_square-7)
+
+        Traceback (most recent call last):
+
+        TypeError: size must be an integer
+
+
+::
